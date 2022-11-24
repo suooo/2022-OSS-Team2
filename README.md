@@ -1,4 +1,4 @@
-# 2022-OSS-Final-Project-Team2
+# 2022 OSS Final Project - Team2
 
 ## Topic : 
 

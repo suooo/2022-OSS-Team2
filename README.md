@@ -13,4 +13,8 @@
 
 ## Presentation Video
 
-## Installation instructions, how to use, examples, documentation, etc.
+- Installation instructions
+- how to use
+- examples
+- documentation
+- etc.

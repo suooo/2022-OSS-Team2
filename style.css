@@ -1,13 +1,9 @@
-html{
-  background-image: url('/img/bg_img_rain.jpg');
-  background-repeat: no-repeat;
-}
-
 body{
+  background-image: url("/img/bg_img_rain.png");
+  background-repeat: no-repeat;
   font-family: 'Inter', sans-serif;
   margin: 0 auto;
   color: #ffffff;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 button{

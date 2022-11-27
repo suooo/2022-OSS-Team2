@@ -15,10 +15,10 @@ button{
 /*Location and Date*/
 .loc_date{
   position: absolute;
-  width: 30%;
-  height: 170px;
+  width: 20%;
+  height: auto;
   left: 12%;
-  top: 15%;
+  top: 10%;
 
   font-style: normal;
   font-weight: 100;
@@ -26,10 +26,9 @@ button{
   line-height: 120%;
 }
 
-.loc_date button{
-  position: absolute;
-  top: -3%;
-  left: -12%;
+.menu{
+  width: 12%;
+  cursor: pointer;
 }
 
 .loc_date span{
@@ -44,17 +43,18 @@ button{
 /*Current Weather*/
 .weather_current{
   position: absolute;
-  width: 309px;
-  height: 329px;
+  width: 20%;
   left: 43%;
   top: 30%;
 }
 
 #temp_cur_img{
   position: absolute;
-  width: 45%;
-  top: -20%;
-  left: -35%
+  max-width: 35%;
+  height: auto;
+  display: block;
+  top: -25%;
+  left: -30%
 }
 
 #temp_cur{
@@ -99,7 +99,9 @@ button{
   left: 25%;
   top: 30%;
   position: absolute;
-  width: 60%;
+  max-width: 60%;
+  height: auto;
+  display: block;
 }
 
 .hourly_temp{
@@ -109,7 +111,7 @@ button{
   font-size: 2.0vw;
 }
 
-/*Memo*/
+/*Side Bar*/
 .side_bar{
   position: absolute;
   width: 23%;
@@ -118,10 +120,17 @@ button{
   background: rgba(255, 255, 255, 0.17);
 }
 
+.side_bar_title{
+  margin-top: 2vw;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+/*
 .btn_up{
   position: absolute;
   left: 5%;
-  top: 5%;
+  top: 3%;
   width: 90%;
   border-bottom: 0.5px solid #FFFFFF;
 }
@@ -147,24 +156,55 @@ button{
   left: 25%;
   width: 50%;
 }
+*/
+
+/*Memo*/
+.memo_pad{
+  position:absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 77%;
+  overflow: auto;
+  border-top: #FFFFFF 1.0px solid;
+  border-bottom: #FFFFFF 1.0px solid;
+}
+
+.memo_pad::-webkit-scrollbar{
+  width: 0.5vw;
+}
+
+.memo_pad::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+.memo_pad::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+
 
 .memo{
-  position: absolute;
-  left: 5%;
-  width: 80%;
-  height: auto;
-  padding: 5%;
-  /*border-top: 0.5px solid #FFFFFF;*/
+  position: relative;
+  margin-top: 6%;
+  border-bottom: 6%;
+}
+
+.img_delete{
+  position: relative;
+  top: 0.25vw;
+  left: -0.3vw;
+  width: 1.6vw;
+  cursor: pointer;
+  float: left;
 }
 
 .memo_date{
   font-size: 1.2vw;
-  line-height: 200%;
-}
-
-.btn_delete{
-  position: absolute;
-  left: 2%;
+  line-height: 180%;
 }
 
 .memo_text{
@@ -182,4 +222,8 @@ button{
   font-family: 'Inter';
   font-size: 1.4vw;
   background: rgba(255, 255, 255, 0.15);
+}
+
+.add_memo:hover{
+  background: rgba(255, 255, 255, 0.3);
 }

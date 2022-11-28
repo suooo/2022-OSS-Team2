@@ -12,6 +12,25 @@ button{
   border: none;
 }
 
+.add_location{
+  position: absolute;
+  width: 10%;
+  height: 25%;
+  left: 40%;
+  top: 28%;
+  font-family: 'Inter';
+  color: #ffffff;
+  font-size: 1.5vw;
+  text-align: center;
+  padding: 2%;
+  border: white 0.8px solid;
+  background: rgba(255, 255, 255, 0.17);
+}
+
+.add_location:hover{
+  background: rgba(255, 255, 255, 0.3);
+}
+
 /*Location and Date*/
 .loc_date{
   position: absolute;
@@ -35,6 +54,11 @@ button{
   font-size: 1.5vw;
 }
 
+.refresh_btn{
+  cursor: pointer;
+  width: 8%;
+}
+
 #time{
   line-height: 150%;
   font-size: 2.3vw;
@@ -42,6 +66,7 @@ button{
 
 /*Current Weather*/
 .weather_current{
+  visibility: hidden;
   position: absolute;
   width: 20%;
   left: 43%;
@@ -121,7 +146,7 @@ button{
 }
 
 .side_bar_title{
-  margin-top: 2vw;
+  padding-top: 10%;
   font-size: 1.5vw;
   text-align: center;
 }

@@ -9,6 +9,16 @@ $(function(){
         }
     );
 
+    $(".refresh_btn").hover(
+        function(){ //mouseover
+            $(this).attr("src", "/img/Rotate_hover.png")
+        },
+        function(){ //mouseout
+            $(this).attr("src", "/img/Rotate.png")
+        }
+    );
+
+
     $(".img_delete").click(function(){
         delete_Memo();
     });

@@ -69,8 +69,15 @@ add_button?.addEventListener("click", () => {
     alert("You must enter at least 3 characters.")
     return;
   }
-  let key = theDate.getMonth() + 1  // today's date variable
-  key += ` ${theDate.getDate()}`;   // testable variable
+
+
+  let key1 = `${theDate.getMonth() + 1}`  // today's date variable
+  if(key1 < 10)
+    key1 = '0' + key1;
+  let key2 = `${theDate.getDate()}`;   // testable variable
+  if(key2 < 10)
+    key2 = '0' + key2;
+  let key = key1 + ' ' + key2;
   let stoarr= key.split(' ');
   let month = months[stoarr[0] - 1];
   let date = ' '+ stoarr[1];

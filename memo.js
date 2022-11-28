@@ -70,12 +70,16 @@ add_button?.addEventListener("click", () => {
     return;
   }
   let key = theDate.getMonth() + 1  // today's date variable
-  key += ` ${theDate.getDate()}`;
-
-  if(map.has(key))
-    localStorage.removeItem(key);
-
-
+  key += ` ${theDate.getDate()}`;   // testable variable
+  let stoarr= key.split(' ');
+  let month = months[stoarr[0] - 1];
+  let date = ' '+ stoarr[1];
+  if(map.has(key)){
+    if (confirm(`A memo is already written on ${month + date}.\nDo you want to overwrite it?`))
+      localStorage.removeItem(key);
+    else
+      return;
+  }
   localStorage.setItem(key, value);
 
   update();

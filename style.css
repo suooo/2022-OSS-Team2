@@ -152,10 +152,21 @@ button{
   position: absolute;
   left: 5%;
   width: 80%;
-  height: auto;
+  height: 67%;
   padding: 5%;
+  overflow-y: auto;
+  overflow-x: hidden;
   /*border-top: 0.5px solid #FFFFFF;*/
 }
+.ul::-webkit-scrollbar {
+    display: none;
+}
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-track {  background-color: #646464;}
+::-webkit-scrollbar-track-piece { background-color: #000;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666;}
+::-webkit-scrollbar-corner { background-color: #646464;}}
+::-webkit-resizer { background-color: #666;}
 
 .memo_label{
   display: flex;

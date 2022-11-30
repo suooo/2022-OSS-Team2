@@ -106,9 +106,9 @@ add_location.addEventListener("click", () => {
             modalOff();
         })
 
-        const gwangju = modal.querySelector("#gwangju")
-        gwangju.addEventListener("click", e => {
-            city = 'gwangju'
+        const daegu = modal.querySelector("#daegu")
+        daegu.addEventListener("click", e => {
+            city = 'daegu'
             city_input();    
             modalOff();
         })

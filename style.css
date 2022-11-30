@@ -184,6 +184,7 @@ button{
   transform-style: preserve-3d;
   transition: all 0.5s ease-in-out;
   z-index: 1;
+  min-width: 100px;
 }
 
 .flip_card .front,
@@ -246,6 +247,12 @@ button{
   outline: none;
   padding-left: 10px;
   background-color: rgb(233, 233, 233);
+  resize: none;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
+.memo_input:hover{
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
 }
 
 .add_memo{

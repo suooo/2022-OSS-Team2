@@ -15,50 +15,88 @@
       <button type="button" name="button">
         <img src="/img/Hamburger.png" alt=""> <br>
       </button>
-      Seoul,<br>
-      26<span>th</span> Nov 2022<br>
-      <div id="time">3 : 32</div>
+
+      <div id="location_cur"></div>
+      <div id ="date_cur"></div>
+      <div id="time"></div>
+
     </div>
+
+
+        <!--Location and Date-->
+            <!--Location and Date-->
+
+  <div id="modal" class="modal-overlay">
+      <div class="modal-window">
+          <div class="title">
+              <h2>Select City</h2>
+          </div>
+          <div class="close-area">X</div>
+          <div id='seoul', class="content">seoul</div>
+          <div id='incheon', class="content">incheon</div>
+          <div id='suwon', class="content">suwon</div>
+          <div id='chuncheon', class="content">chuncheon</div>
+          <div id='cheongju', class="content">cheoungju</div>
+          <div id='andong', class="content">andong</div>
+          <div id='daejeon', class="content">daejeon</div>
+          <div id='jeonju', class="content">jeonju</div>
+          <div id='daegu', class="content">daegu</div>
+          <div id='gwangju', class="content">gwangju</div>
+          <div id='mokpo', class="content">mokpo</div>
+          <div id='yeosu', class="content">yeosu</div>
+          <div id='busan', class="content">busan</div>
+          <div id='ulsan', class="content">ulsan</div>
+          <div id='jeju', class="content">jeju</div>
+      </div>
+  </div>
+
+  <div>
+    <button class="add_location" type="button" name="button">
+      Click to  Location
+    </button>
+  </div>
+          <!--Location and Date-->
+      <!--Location and Date-->
 
     <!--Current Weather-->
     <div class="weather_current">
       <img id="temp_cur_img" src="/img/temp_cur_img.png" alt="">
-      <div id="temp_cur">9</div>
+      <div id="temp_cur"></div>
       <span>° C </span>
-      <div id="temp_today"> 6° / 9° </div>
+      <div id="temp_today"></div>
     </div>
 
     <!--Hourly Weather-->
     <div class="weather_hourly">
       <div class="hourly" style="left: 12%;">
-        <div class="hourly_time"> 3 A.M.</div> <br>
-        <img src="/img/temp_cur_img.png" alt=""> <br>
-        <div class="hourly_temp"> 9° </div>
+        <div class="hourly_time", id = hourly_time1></div> <br>
+        <img id = "temp_fut0_img", src="/img/temp_cur_img.png" alt=""> <br>
+        <div class="hourly_temp", id = hourly_temp1></div>
       </div>
       <div class="hourly" style="left: 19.5%;">
-        <div class="hourly_time"> 4 A.M.</div> <br>
-        <img src="/img/temp_cur_img.png" alt=""> <br>
-        <div class="hourly_temp"> 9° </div>
+        <div class="hourly_time", id = hourly_time2></div> <br>
+        <img id = "temp_fut1_img",img src="/img/temp_cur_img.png" alt=""> <br>
+        <div class="hourly_temp", id = hourly_temp2></div>
       </div>
       <div class="hourly" style="left: 27%;">
-        <div class="hourly_time"> 5 A.M.</div> <br>
-        <img src="/img/temp_cur_img.png" alt=""> <br>
-        <div class="hourly_temp"> 7° </div>
+        <div class="hourly_time", id = hourly_time3></div> <br>
+        <img id = "temp_fut2_img",img src="/img/temp_cur_img.png" alt=""> <br>
+        <div class="hourly_temp", id = hourly_temp3></div>
       </div>
       <div class="hourly" style="left: 34.5%;">
-        <div class="hourly_time"> 6 A.M.</div> <br>
-        <img src="/img/temp_cur_img.png" alt=""> <br>
-        <div class="hourly_temp"> 7° </div>
+        <div class="hourly_time", id = hourly_time4></div> <br>
+        <img id = "temp_fut3_img",img src="/img/temp_cur_img.png" alt=""> <br>
+        <div class="hourly_temp", id = hourly_temp4></div>
       </div>
       <div class="hourly" style="left: 42%;">
-        <div class="hourly_time"> 7 A.M.</div> <br>
-        <img src="/img/temp_cur_img.png" alt=""> <br>
-        <div class="hourly_temp"> 6° </div>
+        <div class="hourly_time", id = hourly_time5></div> <br>
+        <img id = "temp_fut4_img",img src="/img/temp_cur_img.png" alt=""> <br>
+        <div class="hourly_temp", id = hourly_temp5></div>
       </div>
       <div class="hourly" style="left: 49.5%;">
-        <div class="hourly_time"> 8 A.M.</div> <br>
-        <img src="/img/temp_cur_img.png" alt=""> <br>
-        <div class="hourly_temp"> 6° </div>
+        <div class="hourly_time", id = hourly_time6></div> <br>
+        <img id = "temp_fut5_img",img src="/img/temp_cur_img.png" alt=""> <br>
+        <div class="hourly_temp", id = hourly_temp6></div>
       </div>
     </div>
 
@@ -67,6 +105,7 @@
 
       <button class="btn_up" type="button" name="button">
         <img src="/img/up.png" alt=""><br><br><br>
+
       </button>
 
       <div class="memo" id="memo_box" style="top: 10%;">
@@ -74,6 +113,7 @@
       </div>
 
       <button class="btn_down" type="button" name="button">
+
         <br>
         <img src="/img/down.png" alt="">
       </button>
@@ -89,6 +129,10 @@
 
 
   </body>
+
   <script src="memo.js" type="text/javascript"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
   <script src="master.js" type="text/javascript"></script>
 </html>

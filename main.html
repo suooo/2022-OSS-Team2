@@ -19,6 +19,10 @@
       <div id="time"></div>
     </div>
 
+
+        <!--Location and Date-->
+            <!--Location and Date-->
+
   <div id="modal" class="modal-overlay">
       <div class="modal-window">
           <div class="title">
@@ -45,9 +49,11 @@
 
   <div>
     <button class="add_location" type="button" name="button">
-      Click to selct Location
+      Click to  Location
     </button>
   </div>
+          <!--Location and Date-->
+      <!--Location and Date-->
 
     <!--Current Weather-->
     <div class="weather_current">
@@ -94,27 +100,32 @@
     <!--Memo-->
     <div class="side_bar">
 
-      <button class="btn_up" type="button" name="button">
+      <!--<button class="btn_up" type="button" name="button">
         <img src="/img/up.png" alt=""><br><br><br>
-      </button>
+      </button>-->
 
-      <div class="memo" id="memo_box" style="top: 10%;">
-
+      <div class="memo" style="top: 10%;">
+        <div class="memo_date">
+          <button class="btn_delete" type="button" name="button"><img src="/img/Clear.png" alt=""></button>
+          <b> &nbsp&nbsp&nbsp&nbsp  Nov 23</b> 6° / 9° <br>
+        </div>
+        <div class="memo_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</div>
       </div>
 
-      <button class="btn_down" type="button" name="button">
+
+  <!--<button class="btn_down" type="button" name="button">
         <br>
         <img src="/img/down.png" alt="">
+      </button>-->
+
+      <button class="add_memo" type="button" name="button">
+        + Add Comment
       </button>
-      <div class="add_memo">
-        <textarea type="text" name="" value="" id="memoInput" class="memo_input" placeholder="Memo" maxlength="90"></textarea>
-        <button class="add_button" type="button" name="button" id="add">
-          Add
-        </button>
-      </div>
+
+    </div>
+
 
   </body>
-  <script src="memo.js" type="text/javascript"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="master.js" type="text/javascript"></script>
 </html>

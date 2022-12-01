@@ -1,6 +1,19 @@
 //현재 날짜 표시
 date = new Date();
-
+const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
 let date_cur = date.getDate()  + "th " + months[date.getMonth()] + " " + date.getFullYear();
 document.getElementById('date_cur').innerHTML= date_cur;
 

@@ -4,7 +4,7 @@ var add_button = document.querySelector("#add");
 var memo_box = document.querySelector("#memo_box");
 var map = new Map();
 var theDate = new Date();
-const month = [
+var month = [
   "Jan",
   "Feb",
   "Mar",
@@ -30,7 +30,7 @@ function update(){
   const temp_map = [...map].sort().reverse();
   for (const [key, val] of temp_map) {
     let stoarr= key.split(' ');
-    let month = month[stoarr[0] - 1];
+    let m = month[stoarr[0] - 1];
     let date = ' '+ stoarr[1];
 
     let dummy = document.createElement("div");

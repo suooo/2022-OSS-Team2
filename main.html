@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>2022 OSS Team2</title>
+    <script type="text/javascript" src="memo.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +15,11 @@
       <button type="button" name="button">
         <img src="/img/Hamburger.png" alt=""> <br>
       </button>
+
       <div id="location_cur"></div>
       <div id ="date_cur"></div>
       <div id="time"></div>
+
     </div>
 
 
@@ -100,32 +103,36 @@
     <!--Memo-->
     <div class="side_bar">
 
-      <!--<button class="btn_up" type="button" name="button">
+      <button class="btn_up" type="button" name="button">
         <img src="/img/up.png" alt=""><br><br><br>
-      </button>-->
 
-      <div class="memo" style="top: 10%;">
-        <div class="memo_date">
-          <button class="btn_delete" type="button" name="button"><img src="/img/Clear.png" alt=""></button>
-          <b> &nbsp&nbsp&nbsp&nbsp  Nov 23</b> 6° / 9° <br>
-        </div>
-        <div class="memo_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</div>
+      </button>
+
+      <div class="memo" id="memo_box" style="top: 10%;">
+
       </div>
 
+      <button class="btn_down" type="button" name="button">
 
-  <!--<button class="btn_down" type="button" name="button">
         <br>
         <img src="/img/down.png" alt="">
-      </button>-->
-
-      <button class="add_memo" type="button" name="button">
-        + Add Comment
       </button>
+      <div class="add_memo">
+        <textarea type="text" name="" value="" id="memoInput" class="memo_input" placeholder="Memo" maxlength="90"></textarea>
+        <button class="add_button" type="button" name="button" id="add">
+          Add
+        </button>
+      </div>
+
 
     </div>
 
 
   </body>
+
+  <script src="memo.js" type="text/javascript"></script>
+
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
   <script src="master.js" type="text/javascript"></script>
 </html>

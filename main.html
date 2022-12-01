@@ -14,44 +14,37 @@
     <meta http-equiv="refresh" content="600" />
   </head>
   <body>
-    `
     <!--Location and Date-->
     <div class="loc_date">
+      <button class="add_location" type="button" name="button"></button><br />
       <div id="location_cur"></div>
       <div id="date_cur"></div>
       <div id="time"></div>
     </div>
 
     <!--Select Location-->
-
     <div id="modal" class="modal-overlay">
       <div class="modal-window">
-        <div class="title">
-          <h2>Select City</h2>
+        <div class="title">Select City</div>
+        <img class="close-area" src="/img/Clear.png" alt="" />
+        <div id="seoul" , class="content" style="margin-top: 2.5vw">
+          &nbsp; Seoul
         </div>
-        <div class="close-area">X</div>
-        <div id="seoul" , class="content">Seoul</div>
-        <div id="incheon" , class="content">Incheon</div>
-        <div id="suwon" , class="content">Suwon</div>
-        <div id="chuncheon" , class="content">Chuncheon</div>
-        <div id="cheongju" , class="content">Cheoungju</div>
-        <div id="andong" , class="content">Andong</div>
-        <div id="daejeon" , class="content">Daejeon</div>
-        <div id="jeonju" , class="content">Jeonju</div>
-        <div id="daegu" , class="content">Daegu</div>
-        <div id="gwangju" , class="content">Gwangju</div>
-        <div id="mokpo" , class="content">Mokpo</div>
-        <div id="yeosu" , class="content">Yeosu</div>
-        <div id="busan" , class="content">Busan</div>
-        <div id="ulsan" , class="content">Ulsan</div>
-        <div id="jeju" , class="content">Jeju</div>
+        <div id="incheon" , class="content">&nbsp; Incheon</div>
+        <div id="suwon" , class="content">&nbsp; Suwon</div>
+        <div id="chuncheon" , class="content">&nbsp; Chuncheon</div>
+        <div id="cheongju" , class="content">&nbsp; Cheoungju</div>
+        <div id="andong" , class="content">&nbsp; Andong</div>
+        <div id="daejeon" , class="content">&nbsp; Daejeon</div>
+        <div id="jeonju" , class="content">&nbsp; Jeonju</div>
+        <div id="daegu" , class="content">&nbsp; Daegu</div>
+        <div id="gwangju" , class="content">&nbsp; Gwangju</div>
+        <div id="mokpo" , class="content">&nbsp; Mokpo</div>
+        <div id="yeosu" , class="content">&nbsp; Yeosu</div>
+        <div id="busan" , class="content">&nbsp; Busan</div>
+        <div id="ulsan" , class="content">&nbsp; Ulsan</div>
+        <div id="jeju" , class="content">&nbsp; Jeju</div>
       </div>
-    </div>
-
-    <div>
-      <button class="add_location" type="button" name="button">
-        Click to Location
-      </button>
     </div>
 
     <!--Current Weather-->
@@ -110,8 +103,9 @@
     <!--Memo-->
     <div class="side_bar">
       <div class="side_bar_title">Weather Comment</div>
-
-      <div class="memo" id="memo_box" style="top: 10%"></div>
+      <div class="memo_pad">
+        <div class="memo" id="memo_box"></div>
+      </div>
 
       <div class="add_memo">
         <textarea

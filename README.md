@@ -10,11 +10,18 @@
 |Github ID|ByeongNam|pbk95120|suooo|
 
 ## Screenshots
+<img src="https://via.placeholder.com/400x200" width="400" height="200"/>
+<img src="https://via.placeholder.com/400x200" width="400" height="200"/>
 
 ## Presentation Video
+> [Youtube Link]() <!-- 발표영상링크 -->
+## Installation instructions
+> [Website Link]() <!-- 웹사이트링크 -->
+## Function
 
-- Installation instructions
-- how to use
-- examples
-- documentation
-- etc.
+> Weather
+> 설명
+
+> Memo
+
+## etc.

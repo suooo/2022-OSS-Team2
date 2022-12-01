@@ -41,7 +41,7 @@ function update(){
       `        <div class="front memo_date">` +
       `            <button class="btn_delete" type="button" name="${key}" onclick='OnClickRemoveButton(this)'><img src="/img/Clear.png" alt=""></button>` +
       `            <div class="wow" style="padding: 10px;">` +
-      `                <h3 id="date">${month + date}</h3>` +
+      `                <h3 id="date">${m + date}</h3>` +
       `            </div>` +
       `        </div>` +
       `        <div class="back memo_data">` +
@@ -78,10 +78,10 @@ add_button?.addEventListener("click", () => {
     key2 = '0' + key2;
   let key = key1 + ' ' + key2;
   let stoarr= key.split(' ');
-  let month = month[stoarr[0] - 1];
+  let m = month[stoarr[0] - 1];
   let date = ' '+ stoarr[1];
   if(map.has(key)){
-    if (confirm(`A memo is already written on ${month + date}.\nDo you want to overwrite it?`))
+    if (confirm(`A memo is already written on ${m + date}.\nDo you want to overwrite it?`))
       localStorage.removeItem(key);
     else
       return;

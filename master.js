@@ -320,24 +320,26 @@ function city_input() {
     });
 }
 
-$(".menu").hover(
-  function () {
-    //mouseover
-    $(this).attr("src", "/img/Clear.png");
-  },
-  function () {
-    //mouseout
-    $(this).attr("src", "/img/Hamburger.png");
-  }
-);
+$(function () {
+  $(".menu").hover(
+    function () {
+      //mouseover
+      $(this).attr("src", "/img/Clear.png");
+    },
+    function () {
+      //mouseout
+      $(this).attr("src", "/img/Hamburger.png");
+    }
+  );
 
-$(".close-area").hover(
-  function () {
-    //mouseover
-    $(this).attr("src", "/img/Clear_hover.png");
-  },
-  function () {
-    //mouseout
-    $(this).attr("src", "/img/Clear.png");
-  }
-);
+  $(".close-area").hover(
+    function () {
+      //mouseover
+      $(this).attr("src", "/img/Clear_hover.png");
+    },
+    function () {
+      //mouseout
+      $(this).attr("src", "/img/Clear.png");
+    }
+  );
+});

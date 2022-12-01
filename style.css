@@ -1,5 +1,5 @@
-body{
-  background-image: url("/img/bg_img_rain.png");
+.bg_img{
+  background-image: url("/img/bg_img_snow.png");
   background-repeat: no-repeat;
   font-family: 'Inter', sans-serif;
   margin: 0 auto;
@@ -272,7 +272,7 @@ button{
   padding-right: 3%;
   padding-top: 2%;
   margin-left: 6%;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(233, 233, 233, 0.5);
   font-family: 'Inter';
   font-weight: bold;
   color:rgb(35, 36, 46);

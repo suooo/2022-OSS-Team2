@@ -32,8 +32,9 @@ function update(){
     let stoarr= key.split(' ');
     let m = month[stoarr[0] - 1];
     let date = ' '+ stoarr[1];
-
     let dummy = document.createElement("div");
+    let temperature = val.split('_', 1)[0];
+    let value = val.substring(4);
     let variable = `` +
       `<label class="memo_label">` +
       `    <input class="memo_checkbox" type="checkbox" name="" value="">` +
@@ -41,11 +42,11 @@ function update(){
       `        <div class="front memo_date">` +
       `            <button class="btn_delete" type="button" name="${key}" onclick='OnClickRemoveButton(this)'><img src="/img/Clear.png" alt=""></button>` +
       `            <div class="wow" style="padding: 10px;">` +
-      `                <h3 id="date">${m + date}</h3>` +
+      `                <h3 id="date">${m + date}<span style="color:rgba(255, 255, 255, 0.5);"> ${temperature + "°"}</span></h3>` +
       `            </div>` +
       `        </div>` +
       `        <div class="back memo_data">` +
-      `            <p id="userText">${val}</p>` +
+      `            <p id="userText">${value}</p>` +
       `        </div>` +
       `    </div>` +
       `</label>` +
@@ -69,6 +70,9 @@ add_button?.addEventListener("click", () => {
     return;
   }
 
+  let temperature = document.querySelector("#temp_cur").innerHTML;//
+  while(temperature.length < 4)
+    temperature+="_";
 
   let key1 = `${theDate.getMonth() + 1}`  // today's date variable
   if(key1 < 10)
@@ -86,7 +90,7 @@ add_button?.addEventListener("click", () => {
     else
       return;
   }
-  localStorage.setItem(key, value);
+  localStorage.setItem(key, temperature + value);
 
   update();
 });

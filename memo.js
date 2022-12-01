@@ -4,7 +4,7 @@ var add_button = document.querySelector("#add");
 var memo_box = document.querySelector("#memo_box");
 var map = new Map();
 var theDate = new Date();
-var months = [
+const month = [
   "Jan",
   "Feb",
   "Mar",
@@ -25,13 +25,12 @@ function update(){
   for(let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
     const value = localStorage.getItem(key);
-    // const weather 날씨 정보도 추가시
     map.set(key, value);
   }
   const temp_map = [...map].sort().reverse();
   for (const [key, val] of temp_map) {
     let stoarr= key.split(' ');
-    let month = months[stoarr[0] - 1];
+    let month = month[stoarr[0] - 1];
     let date = ' '+ stoarr[1];
 
     let dummy = document.createElement("div");
@@ -79,7 +78,7 @@ add_button?.addEventListener("click", () => {
     key2 = '0' + key2;
   let key = key1 + ' ' + key2;
   let stoarr= key.split(' ');
-  let month = months[stoarr[0] - 1];
+  let month = month[stoarr[0] - 1];
   let date = ' '+ stoarr[1];
   if(map.has(key)){
     if (confirm(`A memo is already written on ${month + date}.\nDo you want to overwrite it?`))

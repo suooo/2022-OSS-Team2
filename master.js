@@ -31,7 +31,7 @@ let city=document.getElementById("location_cur");
 
 let citylenght = sessionStorage.length;
 
-if(citylenght===0){
+if(citylenght===1){
     sessionStorage.setItem("city_cur", 'seoul');
 }
 city = sessionStorage.getItem("city_cur");

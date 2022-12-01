@@ -28,7 +28,13 @@ document.getElementById('time').innerHTML= time;
 const add_location = document.querySelector(".add_location");
 const modal = document.getElementById("modal")
 let city=document.getElementById("location_cur");
-city = 'seoul'
+
+let citylenght = sessionStorage.length;
+
+if(citylenght===0){
+    sessionStorage.setItem("city_cur", 'seoul');
+}
+city = sessionStorage.getItem("city_cur");
 city_input();
 
 add_location.addEventListener("click", () => {
@@ -54,6 +60,8 @@ add_location.addEventListener("click", () => {
         const seoul = modal.querySelector("#seoul")
         seoul.addEventListener("click", e => {
             city = 'seoul'
+            sessionStorage.setItem("city_cur", 'seoul');
+            city = sessionStorage.getItem("city_cur");
             city_input();    
             modalOff();
         })
@@ -61,13 +69,17 @@ add_location.addEventListener("click", () => {
         const incheon = modal.querySelector("#incheon")
         incheon.addEventListener("click", e => {
             city = 'incheon'
-            city_input();    
+            sessionStorage.setItem("city_cur", 'incheon');
+            city = sessionStorage.getItem("city_cur");
+            city_input(); 
             modalOff();
         })
 
         const suwon = modal.querySelector("#suwon")
         suwon.addEventListener("click", e => {
             city = 'suwon'
+            sessionStorage.setItem("city_cur", 'suwon');
+            city = sessionStorage.getItem("city_cur");
             city_input();    
             modalOff();
         })
@@ -75,12 +87,16 @@ add_location.addEventListener("click", () => {
         const chuncheon = modal.querySelector("#chuncheon")
         chuncheon.addEventListener("click", e => {
             city = 'chuncheon'
+            sessionStorage.setItem("city_cur", 'chuncheon');
+            city = sessionStorage.getItem("city_cur");
             city_input();    
             modalOff();
         })
 
         const cheongju = modal.querySelector("#cheongju")
         cheongju.addEventListener("click", e => {
+            sessionStorage.setItem("city_cur", 'cheongju');
+            city = sessionStorage.getItem("city_cur");
             city = 'cheongju'
             city_input();    
             modalOff();
@@ -88,6 +104,8 @@ add_location.addEventListener("click", () => {
 
         const andong = modal.querySelector("#andong")
         andong.addEventListener("click", e => {
+            sessionStorage.setItem("city_cur", 'andong');
+            city = sessionStorage.getItem("city_cur");
             city = 'andong'
             city_input();    
             modalOff();
@@ -95,6 +113,8 @@ add_location.addEventListener("click", () => {
 
         const daejeon = modal.querySelector("#daejeon")
         daejeon.addEventListener("click", e => {
+            sessionStorage.setItem("city_cur", 'daejeon');
+            city = sessionStorage.getItem("city_cur");
             city = 'daejeon'
             city_input();    
             modalOff();
@@ -102,6 +122,8 @@ add_location.addEventListener("click", () => {
 
         const jeonju = modal.querySelector("#jeonju")
         jeonju.addEventListener("click", e => {
+            sessionStorage.setItem("city_cur", 'jeonju');
+            city = sessionStorage.getItem("city_cur");
             city = 'jeonju'
             city_input();    
             modalOff();
@@ -109,13 +131,26 @@ add_location.addEventListener("click", () => {
 
         const daegu = modal.querySelector("#daegu")
         daegu.addEventListener("click", e => {
+            sessionStorage.setItem("city_cur", 'daegu');
+            city = sessionStorage.getItem("city_cur");
             city = 'daegu'
+            city_input();    
+            modalOff();
+        })
+
+        const gwangju = modal.querySelector("#gwangju")
+        gwangju.addEventListener("click", e => {
+            sessionStorage.setItem("city_cur", 'gwangju');
+            city = sessionStorage.getItem("city_cur");
+            city = 'gwangju'
             city_input();    
             modalOff();
         })
 
         const mokpo = modal.querySelector("#mokpo")
         mokpo.addEventListener("click", e => {
+            sessionStorage.setItem("city_cur", 'mokpo');
+            city = sessionStorage.getItem("city_cur");
             city = 'mokpo'
             city_input();    
             modalOff();
@@ -123,6 +158,8 @@ add_location.addEventListener("click", () => {
 
         const yeosu = modal.querySelector("#yeosu")
         yeosu.addEventListener("click", e => {
+            sessionStorage.setItem("city_cur", 'yeosu');
+            city = sessionStorage.getItem("city_cur");
             city = 'yeosu'
             city_input();    
             modalOff();
@@ -130,6 +167,8 @@ add_location.addEventListener("click", () => {
 
         const busan = modal.querySelector("#busan")
         busan.addEventListener("click", e => {
+            sessionStorage.setItem("city_cur", 'busan');
+            city = sessionStorage.getItem("city_cur");
             city = 'busan'
             city_input();    
             modalOff();
@@ -137,6 +176,8 @@ add_location.addEventListener("click", () => {
 
         const ulsan = modal.querySelector("#ulsan")
         ulsan.addEventListener("click", e => {
+            sessionStorage.setItem("city_cur", 'ulsan');
+            city = sessionStorage.getItem("city_cur");
             city = 'ulsan'
             city_input();    
             modalOff();
@@ -144,6 +185,8 @@ add_location.addEventListener("click", () => {
 
         const jeju = modal.querySelector("#jeju")
         jeju.addEventListener("click", e => {
+            sessionStorage.setItem("city_cur", 'jeju');
+            city = sessionStorage.getItem("city_cur");
             city = 'jeju'
             city_input();    
             modalOff();

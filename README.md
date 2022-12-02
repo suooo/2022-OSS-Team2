@@ -31,8 +31,8 @@
 선택한 지역은 세션 스토리지에 기록되며 탭을 닫지 않는한 다시 접속할 경우 해당 지역을 다시 표시해 사용자 편의를 개선하였다.
 <br/>
 <br/>
-<img src="https://user-images.githubusercontent.com/51541413/205245322-379ba5ba-cd8a-4218-9561-dd19ccd38ad5.png"  height="400">
-<img src= "https://user-images.githubusercontent.com/51541413/205242704-6d4512e1-3000-4baf-9311-19001aa7dc33.png"  height="400">
+<img src="https://user-images.githubusercontent.com/51541413/205245322-379ba5ba-cd8a-4218-9561-dd19ccd38ad5.png"  height="300">
+<img src= "https://user-images.githubusercontent.com/51541413/205242704-6d4512e1-3000-4baf-9311-19001aa7dc33.png"  height="300">
 <br/>
 
 
@@ -48,10 +48,10 @@
 중복되는 날짜에 메모 입력시 덮어쓰기 여부를 확인하여 사용자 편의를 개선하였다.
 <br/>
 <br/>
-<img src = "https://user-images.githubusercontent.com/51541413/205242771-36067e0c-f849-4600-828e-9079967a7da9.png" height="200">
-<img src = "https://user-images.githubusercontent.com/51541413/205242898-a150fde5-1f61-484d-8743-6588cf560873.png" height="200">
+<img src = "https://user-images.githubusercontent.com/51541413/205242771-36067e0c-f849-4600-828e-9079967a7da9.png" height="160">
+<img src = "https://user-images.githubusercontent.com/51541413/205242898-a150fde5-1f61-484d-8743-6588cf560873.png" height="160">
 <br/>
-<img src = "https://user-images.githubusercontent.com/51541413/205242905-c5fc9cb7-45ad-4e97-a9ce-4005608469a5.png" height="200">
+<img src = "https://user-images.githubusercontent.com/51541413/205242905-c5fc9cb7-45ad-4e97-a9ce-4005608469a5.png" height="160">
 
 
 

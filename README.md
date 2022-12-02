@@ -1,6 +1,6 @@
 # 2022 OSS Final Project - Team2
 
-## Topic : 
+## Topic : We need previous weather
 
 ## Contact information
 ||강병남|박병규|박수연|
@@ -9,12 +9,16 @@
 |E-mail|acqeww232@naver.com|pbk95120@gmail.com|paksy0428@g.skku.edu|
 |Github ID|ByeongNam|pbk95120|suooo|
 
+## Purpose
+현재와 미래의 날씨뿐만 아니라 과거의 날씨또한 확인할 수 있으며 <br/>
+해당 날씨와 기온에 대해 알맞는 옷차림등 자신만의 메모를 작성하여 저장하고 확인할수 있는 웹페이지를 개발
+
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/51541413/205244508-037a2c03-3306-41e8-89ac-fa0026512cb0.png)
 ![image](https://user-images.githubusercontent.com/51541413/205244646-62f37c84-0bd2-4eca-ad8b-c6b6dc81d4e8.png)
 
 ## Presentation Video
-> Link: [Youtube]() <!-- 발표영상링크 -->
+> Link: [Youtube](https://www.youtube.com/watch?v=pI2VQHGsJhQ) <!-- 발표영상링크 -->
 ## Installation instructions
 You can download our code from Github using git clone.
 ```

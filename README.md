@@ -21,9 +21,10 @@ You can download our code from Github using git clone.
 git clone https://github.com/suooo/2022-OSS-Team2.git
 ```
 > Link: [Website](https://suooo.github.io/2022-OSS-Team2/) <!-- 웹사이트링크 -->
+
 ## Function
 
-### Weather
+### Weather (./master.js)
 기상청 날씨 Open API를 사용하여 현재와 미래의 날씨, 기온 확인.
 <br/>
 현재 날씨와 기온, 오늘의 최저/최고 기온이 상단에 디스플레이되며, 하단에서는 3시간 단위의 미래 날씨와 기온을 확인할 수 있다.
@@ -39,7 +40,7 @@ git clone https://github.com/suooo/2022-OSS-Team2.git
 <br/>
 
 
-### Memo
+### Memo (./memo.js)
 날씨에 따른 메모를 저장하고 확인, 해당 메모를 작성한 날짜의 기온 확인.
 <br />
 날짜를 클릭하면 메모 내용을 볼 수 있다.

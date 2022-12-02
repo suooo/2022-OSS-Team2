@@ -1,6 +1,6 @@
 # 2022 OSS Final Project - Team2
 
-## Topic : We need previous weather
+## Topic : We Need Previous Weather
 
 ## Contact information
 ||강병남|박병규|박수연|
@@ -10,8 +10,8 @@
 |Github ID|ByeongNam|pbk95120|suooo|
 
 ## Purpose
-현재와 미래의 날씨뿐만 아니라 과거의 날씨또한 확인할 수 있으며 <br/>
-해당 날씨와 기온에 대해 알맞는 옷차림등 자신만의 메모를 작성하여 저장하고 확인할수 있는 웹페이지를 개발
+현재와 미래의 날씨뿐만 아니라 과거의 날씨 또한 확인할 수 있으며 <br/>
+해당 날씨와 기온에 따른 알맞은 옷차림 등 자신만의 메모를 작성하여 저장하고 확인할 수 있는 웹페이지를 개발
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/51541413/205244508-037a2c03-3306-41e8-89ac-fa0026512cb0.png)

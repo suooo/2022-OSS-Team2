@@ -1,5 +1,5 @@
-body{
-  background-image: url("/img/bg_img_rain.png");
+.bg_img{
+  background-image: url("/img/bg_img_snow.png");
   background-repeat: no-repeat;
   font-family: 'Inter', sans-serif;
   margin: 0 auto;
@@ -13,35 +13,29 @@ button{
 }
 
 .add_location{
-  position: absolute;
-  width: 10%;
-  height: 25%;
-  left: 25%;
-  top: 28%;
-  font-family: 'Inter';
-  color: #ffffff;
-  font-size: 1.5vw;
-  text-align: center;
-  padding: 2%;
-  border: white 0.8px solid;
-  background: rgba(255, 255, 255, 0.17);
+  width: 15%;
+  height: 30%;
+  margin-left: 11%;
+  background-image: url("/img/Hamburger.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
 }
 
 .add_location:hover{
-  background: rgba(255, 255, 255, 0.3);
+  background-image: url("/img/Hamburger_hover.png");
 }
 
 /*Location and Date*/
 .loc_date{
   position: absolute;
-  width: 30%;
-  height: 170px;
+  width: 20%;
+  height: auto;
   left: 12%;
-  top: 15%;
+  top: 10%;
 
   font-style: normal;
   font-weight: 100;
-  font-size: 2.0vw;
+  font-size: 1.8vw;
   line-height: 120%;
 }
 
@@ -49,10 +43,6 @@ button{
   position: absolute;
   top: -3%;
   left: -12%;
-}
-
-.loc_date span{
-  font-size: 1.5vw;
 }
 
 #time{
@@ -63,17 +53,18 @@ button{
 /*Current Weather*/
 .weather_current{
   position: absolute;
-  width: 309px;
-  height: 329px;
+  width: 20%;
   left: 43%;
   top: 30%;
 }
 
 #temp_cur_img{
   position: absolute;
-  width: 45%;
-  top: -20%;
-  left: -35%
+  max-width: 35%;
+  height: auto;
+  display: block;
+  top: -25%;
+  left: -30%
 }
 
 #temp_cur{
@@ -118,7 +109,9 @@ button{
   left: 25%;
   top: 30%;
   position: absolute;
-  width: 60%;
+  max-width: 60%;
+  height: auto;
+  display: block;
 }
 
 .hourly_temp{
@@ -134,58 +127,59 @@ button{
   width: 23%;
   height: 100%;
   right: 15%;
+  top: 0%;
   background: rgba(255, 255, 255, 0.17);
 }
 
-.btn_up{
-  position: absolute;
-  left: 5%;
-  top: 5%;
-  width: 90%;
-  border-bottom: 0.5px solid #FFFFFF;
+.side_bar_title{
+  padding-top: 10%;
+  font-size: 1.5vw;
+  text-align: center;
 }
 
-.btn_up img{
-  position: absolute;
-  top: -3%;
-  left: 25%;
-  width: 50%;
-  height: auto;
+.memo_pad{
+  position:absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 77%;
+  overflow: auto;
+  border-top: #FFFFFF 1.0px solid;
+  border-bottom: #FFFFFF 1.0px solid;
 }
 
-.btn_down{
-  position: absolute;
-  left: 5%;
-  top: 82%;
-  width: 90%;
-  border-top: 0.5px solid #FFFFFF;
+.memo_pad::-webkit-scrollbar{
+  width: 0.5vw;
 }
 
-.btn_down img{
-  position: absolute;
-  left: 25%;
-  width: 50%;
+.memo_pad::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
 }
 
+.memo_pad::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
 
 .memo{
-  position: absolute;
-  left: 5%;
-  width: 80%;
-  height: 67%;
-  padding: 5%;
+  position: relative;
+  margin-top: 6%;
+  height: auto;
   overflow-y: auto;
   overflow-x: hidden;
-  /*border-top: 0.5px solid #FFFFFF;*/
 }
+
 .ul::-webkit-scrollbar {
     display: none;
 }
-::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar { width: 0.3vw;}
 ::-webkit-scrollbar-track {  background-color: #646464;}
 ::-webkit-scrollbar-track-piece { background-color: #000;}
-::-webkit-scrollbar-thumb { height: 50px; background-color: #666;}
-::-webkit-scrollbar-corner { background-color: #646464;}}
+::-webkit-scrollbar-thumb { background-color: #666;}
+::-webkit-scrollbar-corner { background-color: #646464;}
 ::-webkit-resizer { background-color: #666;}
 
 .memo_label{
@@ -251,8 +245,17 @@ button{
   margin-right: 10px;
 }
 
+.btn_delete{
+  width: 15%;
+  height: 30%;
+  margin-left: 2%;
+  background-image:url("/img/Clear.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
 .btn_delete:hover{
-  box-shadow: 0 10px 10px rgba(50, 50, 50, 0.4);
+  background-image:url("/img/Clear_hover.png");
 }
 
 .memo_text{
@@ -263,10 +266,16 @@ button{
   width: 70%;
   height: 80%;
   border: 0;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
-  padding-left: 10px;
-  background-color: rgb(233, 233, 233);
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  margin-left: 6%;
+  background-color: rgb(233, 233, 233, 0.5);
+  font-family: 'Inter';
+  font-weight: bold;
+  color:rgb(35, 36, 46);
   resize: none;
   transform-style: preserve-3d;
   transition: all 0.5s ease-in-out;
@@ -293,16 +302,26 @@ button{
 }
 
 .add_button{
-  height: 50%;
-  width: 20%;
+  height: auto;
+  width: auto;
   color: white;
+  margin-right: 3%;
+  margin-left: 2%;
+  font-family: 'Inter';
+  font-size: 0.8vw;
   transform-style: preserve-3d;
   transition: all 0.5s ease-in-out;
 }
 
 .add_button:hover{
-  transform: rotateX(2deg);
-  box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.4);
+  color: #FFFFFF;
+  text-shadow: 0px 0px 10px #FFFFFF;
+  background: radial-gradient(ellipse, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) );
+}
+
+.font{
+  font-family: 'Inter';
+  color: #FFFFFF;
 }
 
  /*모달창 css 추가*/
@@ -315,52 +334,57 @@ button{
   display: none;
   flex-direction: column;
   align-items: left;
+  z-index : 100;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 #modal .modal-window {
-  background: rgba( 69, 139, 197, 0.70 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  font-family: 'Inter';
+  background: rgba(108, 108, 137, 0.7);
   backdrop-filter: blur( 13.5px );
   -webkit-backdrop-filter: blur( 13.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  width: 400px;
-  height: 500px;
+  border-radius: 4px;
+  width: 15%;
   position: relative;
-  top: -100px;
-  padding: 10px;
+  left: 13%;
+  top: -7%;
+  padding: 1.5%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 #modal .title {
-  padding-left: 10px;
-  display: inline;
-  text-shadow: 1px 1px 2px gray;
-  color: white;
-  
+  font-family: 'Inter';
+  position: relative;
+  float: left;
+  color: white; 
+  font-size: 1.2vw;
+  font-weight: bolder;
 }
-#modal .title h2 {
-  display: inline;
-}
+
 #modal .close-area {
-  display: inline;
+  position: absolute;
+  right: 10%;
   float: right;
-  padding-right: 10px;
   cursor: pointer;
-  text-shadow: 1px 1px 2px gray;
-  color: white;
+  width: 10%;
 }
 
 #modal .content {
-  margin-top: 10px;
+  font-family: 'Inter';
+  margin-top: 4%;
   padding: 0px 10px;
   text-shadow: 1px 1px 2px gray;
   cursor: pointer;
   color: white;
+}
+
+.content:hover{
+  font-style: italic;
+  background-image:url("/img/location.png");
+  background-repeat: no-repeat;
+  background-size: 5%;
+  background-position: left;
 }

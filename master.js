@@ -44,7 +44,7 @@ let citylenght = sessionStorage.length;
 
 
 window.onload = function () {
-  if (citylenght < 1) {
+  if (citylenght === 1) {
     sessionStorage.setItem("city_cur", "Seoul");
   }
   city = sessionStorage.getItem("city_cur");

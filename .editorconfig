@@ -1,0 +1,18 @@
+# 최상위에 있는 파일로 명시
+root = true
+
+# 모든 파일에 적용
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# '.js'끝나는 파일에 적용
+[*.{js}]
+charset = utf-8
+
+[*.md]
+trim_trailing_whitespace = false
+
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2

@@ -42,11 +42,15 @@ const modal = document.getElementById("modal");
 let city = document.getElementById("location_cur");
 let citylenght = sessionStorage.length;
 
-if (citylenght === 1) {
-  sessionStorage.setItem("city_cur", "Seoul");
-}
-city = sessionStorage.getItem("city_cur");
-city_input();
+
+window.onload = function () {
+  if (citylenght < 1) {
+    sessionStorage.setItem("city_cur", "Seoul");
+  }
+  city = sessionStorage.getItem("city_cur");
+  city_input();
+};
+
 
 add_location.addEventListener("click", () => {
   modal.style.display = "flex";

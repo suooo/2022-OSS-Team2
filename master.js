@@ -42,8 +42,8 @@ const modal = document.getElementById("modal");
 let city = document.getElementById("location_cur");
 let citylenght = sessionStorage.length;
 
-if(citylenght===1){
-    sessionStorage.setItem("city_cur", 'seoul');
+if (citylenght === 1) {
+  sessionStorage.setItem("city_cur", "Seoul");
 }
 city = sessionStorage.getItem("city_cur");
 city_input();
@@ -70,7 +70,7 @@ closeBtn.addEventListener("click", (e) => {
 function slectcity() {
   const seoul = modal.querySelector("#seoul");
   seoul.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Seoul');
+    sessionStorage.setItem("city_cur", "Seoul");
     city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
@@ -78,7 +78,7 @@ function slectcity() {
 
   const incheon = modal.querySelector("#incheon");
   incheon.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Incheon');
+    sessionStorage.setItem("city_cur", "Incheon");
     city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
@@ -86,7 +86,7 @@ function slectcity() {
 
   const suwon = modal.querySelector("#suwon");
   suwon.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Suwon');
+    sessionStorage.setItem("city_cur", "Suwon");
     city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
@@ -94,7 +94,7 @@ function slectcity() {
 
   const chuncheon = modal.querySelector("#chuncheon");
   chuncheon.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Chuncheon');
+    sessionStorage.setItem("city_cur", "Chuncheon");
     city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
@@ -102,7 +102,7 @@ function slectcity() {
 
   const cheongju = modal.querySelector("#cheongju");
   cheongju.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Cheongju');
+    sessionStorage.setItem("city_cur", "Cheongju");
     city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
@@ -110,7 +110,7 @@ function slectcity() {
 
   const andong = modal.querySelector("#andong");
   andong.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Andong');
+    sessionStorage.setItem("city_cur", "Andong");
     city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
@@ -118,7 +118,7 @@ function slectcity() {
 
   const daejeon = modal.querySelector("#daejeon");
   daejeon.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Daejeon');
+    sessionStorage.setItem("city_cur", "Daejeon");
     city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
@@ -126,7 +126,7 @@ function slectcity() {
 
   const jeonju = modal.querySelector("#jeonju");
   jeonju.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Jeonju');
+    sessionStorage.setItem("city_cur", "Jeonju");
     city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
@@ -134,23 +134,23 @@ function slectcity() {
 
   const daegu = modal.querySelector("#daegu");
   daegu.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Daegu');
+    sessionStorage.setItem("city_cur", "Daegu");
     city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
   });
 
-  const gwangju = modal.querySelector("#gwangju")
-  gwangju.addEventListener("click", e => {
-      sessionStorage.setItem("city_cur", 'Gwangju');
-      city = sessionStorage.getItem("city_cur");
-      city_input();    
-      modalOff();
-  })
+  const gwangju = modal.querySelector("#gwangju");
+  gwangju.addEventListener("click", (e) => {
+    sessionStorage.setItem("city_cur", "Gwangju");
+    city = sessionStorage.getItem("city_cur");
+    city_input();
+    modalOff();
+  });
 
   const mokpo = modal.querySelector("#mokpo");
   mokpo.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Mokpo');
+    sessionStorage.setItem("city_cur", "Mokpo");
     city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
@@ -158,7 +158,7 @@ function slectcity() {
 
   const yeosu = modal.querySelector("#yeosu");
   yeosu.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Yeosu');
+    sessionStorage.setItem("city_cur", "Yeosu");
     city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
@@ -166,7 +166,7 @@ function slectcity() {
 
   const busan = modal.querySelector("#busan");
   busan.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Busan');
+    sessionStorage.setItem("city_cur", "Busan");
     city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
@@ -174,7 +174,7 @@ function slectcity() {
 
   const ulsan = modal.querySelector("#ulsan");
   ulsan.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Ulsan');
+    sessionStorage.setItem("city_cur", "Ulsan");
     city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
@@ -182,8 +182,8 @@ function slectcity() {
 
   const jeju = modal.querySelector("#jeju");
   jeju.addEventListener("click", (e) => {
-    sessionStorage.setItem("city_cur", 'Jeju');
-    city = sessionStorage.getItem("city_cur"); 
+    sessionStorage.setItem("city_cur", "Jeju");
+    city = sessionStorage.getItem("city_cur");
     city_input();
     modalOff();
   });
@@ -219,24 +219,32 @@ function city_input() {
 
       let weather = data.weather[0].main;
 
-      if (weather === "Clear"){
-        document.getElementById("temp_cur_img").src = "/img/temp_cur_img.png";
-        document.getElementsByClassName("bg_img")[0].style.backgroundImage = 'url("/img/bg_img_clear.png")';
-      }      
+      if (weather === "Clear") {
+        document.getElementById("temp_cur_img").src = "/img/weather_clear.png";
+        document.getElementById("temp_cur_img").style.width = "23%";
+        document.getElementsByClassName("bg_img")[0].style.backgroundImage =
+          'url("/img/bg_img_clear.png")';
+      }
       //맑음 사진
-      else if (weather === "Rain"){
-        document.getElementById("temp_cur_img").src = "/img/temp_cur_img.png";
-        document.getElementsByClassName("bg_img")[0].style.backgroundImage = 'url("/img/bg_img_rain.png")';
+      else if (weather === "Rain") {
+        document.getElementById("temp_cur_img").src = "/img/weather_rain.png";
+        document.getElementById("temp_cur_img").style.width = "30%";
+        document.getElementsByClassName("bg_img")[0].style.backgroundImage =
+          'url("/img/bg_img_rain.png")';
       }
       //비 사진
-      else if (weather === "Snow"){
-        document.getElementById("temp_cur_img").src = "/img/temp_cur_img.png";
-        document.getElementsByClassName("bg_img")[0].style.backgroundImage = 'url("/img/bg_img_snow.png")';
+      else if (weather === "Snow") {
+        document.getElementById("temp_cur_img").src = "/img/weather_snow.png";
+        document.getElementById("temp_cur_img").style.width = "27%";
+        document.getElementsByClassName("bg_img")[0].style.backgroundImage =
+          'url("/img/bg_img_snow.png")';
       }
       //눈 사진
-      else if (weather === "Clouds"){
-        document.getElementById("temp_cur_img").src = "/img/temp_cur_img.png";
-        document.getElementsByClassName("bg_img")[0].style.backgroundImage = 'url("/img/bg_img_cloudy.png")';
+      else if (weather === "Clouds") {
+        document.getElementById("temp_cur_img").src = "/img/weather_cloud.png";
+        document.getElementById("temp_cur_img").style.width = "30%";
+        document.getElementsByClassName("bg_img")[0].style.backgroundImage =
+          'url("/img/bg_img_cloudy.png")';
       }
       // 날씨에 맞게 css 이미지 변경
     });
@@ -336,21 +344,23 @@ function city_input() {
       document.getElementById("hourly_temp6").innerHTML = hourly_temp6;
 
       for (let i = 0; i < 6; i++) {
-        if (weather_fut[i] === "Clear")
-          document.getElementById("temp_fut" + i + "_img").src =
-            "/img/temp_cur_img.png";
+        if (weather_fut[i] === "Clear") {
+          let temp = document.getElementById("temp_fut" + i + "_img");
+          temp.src = "/img/weather_clear.png";
+          temp.style.width = "50%";
+        }
         //맑음 사진
         else if (weather_fut[i] === "Rain")
           document.getElementById("temp_fut" + i + "_img").src =
-            "/img/temp_cur_img.png";
+            "/img/weather_rain.png";
         //비 사진
         else if (weather_fut[i] === "Snow")
           document.getElementById("temp_fut" + i + "_img").src =
-            "/img/temp_cur_img.png";
+            "/img/weather_snow.png";
         //눈 사진
         else if (weather_fut[i] === "Clouds")
           document.getElementById("temp_fut" + i + "_img").src =
-            "/img/temp_cur_img.png";
+            "/img/weather_cloud.png";
       } // 3시간후 날씨에 맞게 css 이미지 변경
     });
 }

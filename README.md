@@ -20,6 +20,7 @@ You can download our code from Github using git clone.
 ```
 git clone https://github.com/suooo/2022-OSS-Team2.git
 ```
+or
 > Link: [Website](https://suooo.github.io/2022-OSS-Team2/) <!-- 웹사이트링크 -->
 
 ## Function

@@ -60,4 +60,6 @@ git clone https://github.com/suooo/2022-OSS-Team2.git
 
 
 
-## etc.
+## License
+
+This project is released under the [MIT License](http://www.opensource.org/licenses/MIT).

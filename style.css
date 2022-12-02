@@ -15,13 +15,13 @@ button{
   width: 15%;
   height: 30%;
   margin-left: 11%;
-  background-image: url("/img/Hamburger.png");
+  background-image: url("./img/Hamburger.png");
   background-repeat: no-repeat;
   background-size: 80%;
 }
 
 .add_location:hover{
-  background-image: url("/img/Hamburger_hover.png");
+  background-image: url("./img/Hamburger_hover.png");
 }
 
 /*Location and Date*/
@@ -248,13 +248,13 @@ button{
   width: 15%;
   height: 30%;
   margin-left: 2%;
-  background-image:url("/img/Clear.png");
+  background-image:url("./img/Clear.png");
   background-repeat: no-repeat;
   background-size: 70%;
 }
 
 .btn_delete:hover{
-  background-image:url("/img/Clear_hover.png");
+  background-image:url("./img/Clear_hover.png");
 }
 
 .memo_text{
@@ -382,7 +382,7 @@ button{
 
 .content:hover{
   font-style: italic;
-  background-image:url("/img/location.png");
+  background-image:url("./img/location.png");
   background-repeat: no-repeat;
   background-size: 5%;
   background-position: left;

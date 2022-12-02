@@ -220,31 +220,31 @@ function city_input() {
       let weather = data.weather[0].main;
 
       if (weather === "Clear") {
-        document.getElementById("temp_cur_img").src = "/img/weather_clear.png";
+        document.getElementById("temp_cur_img").src = "./img/weather_clear.png";
         document.getElementById("temp_cur_img").style.width = "23%";
         document.getElementsByClassName("bg_img")[0].style.backgroundImage =
-          'url("/img/bg_img_clear.png")';
+          'url("./img/bg_img_clear.png")';
       }
       //맑음 사진
       else if (weather === "Rain") {
-        document.getElementById("temp_cur_img").src = "/img/weather_rain.png";
+        document.getElementById("temp_cur_img").src = "./img/weather_rain.png";
         document.getElementById("temp_cur_img").style.width = "30%";
         document.getElementsByClassName("bg_img")[0].style.backgroundImage =
-          'url("/img/bg_img_rain.png")';
+          'url("./img/bg_img_rain.png")';
       }
       //비 사진
       else if (weather === "Snow") {
-        document.getElementById("temp_cur_img").src = "/img/weather_snow.png";
+        document.getElementById("temp_cur_img").src = "./img/weather_snow.png";
         document.getElementById("temp_cur_img").style.width = "27%";
         document.getElementsByClassName("bg_img")[0].style.backgroundImage =
-          'url("/img/bg_img_snow.png")';
+          'url("./img/bg_img_snow.png")';
       }
       //눈 사진
       else if (weather === "Clouds") {
-        document.getElementById("temp_cur_img").src = "/img/weather_cloud.png";
+        document.getElementById("temp_cur_img").src = "./img/weather_cloud.png";
         document.getElementById("temp_cur_img").style.width = "30%";
         document.getElementsByClassName("bg_img")[0].style.backgroundImage =
-          'url("/img/bg_img_cloudy.png")';
+          'url("./img/bg_img_cloudy.png")';
       }
       // 날씨에 맞게 css 이미지 변경
     });
@@ -346,21 +346,21 @@ function city_input() {
       for (let i = 0; i < 6; i++) {
         if (weather_fut[i] === "Clear") {
           let temp = document.getElementById("temp_fut" + i + "_img");
-          temp.src = "/img/weather_clear.png";
+          temp.src = "./img/weather_clear.png";
           temp.style.width = "50%";
         }
         //맑음 사진
         else if (weather_fut[i] === "Rain")
           document.getElementById("temp_fut" + i + "_img").src =
-            "/img/weather_rain.png";
+            "./img/weather_rain.png";
         //비 사진
         else if (weather_fut[i] === "Snow")
           document.getElementById("temp_fut" + i + "_img").src =
-            "/img/weather_snow.png";
+            "./img/weather_snow.png";
         //눈 사진
         else if (weather_fut[i] === "Clouds")
           document.getElementById("temp_fut" + i + "_img").src =
-            "/img/weather_cloud.png";
+            "./img/weather_cloud.png";
       } // 3시간후 날씨에 맞게 css 이미지 변경
     });
 }
@@ -369,22 +369,22 @@ $(function () {
   $(".menu").hover(
     function () {
       //mouseover
-      $(this).attr("src", "/img/Clear.png");
+      $(this).attr("src", "./img/Clear.png");
     },
     function () {
       //mouseout
-      $(this).attr("src", "/img/Hamburger.png");
+      $(this).attr("src", "./img/Hamburger.png");
     }
   );
 
   $(".close-area").hover(
     function () {
       //mouseover
-      $(this).attr("src", "/img/Clear_hover.png");
+      $(this).attr("src", "./img/Clear_hover.png");
     },
     function () {
       //mouseout
-      $(this).attr("src", "/img/Clear.png");
+      $(this).attr("src", "./img/Clear.png");
     }
   );
 });

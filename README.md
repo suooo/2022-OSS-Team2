@@ -16,6 +16,10 @@
 ## Presentation Video
 > [Youtube Link]() <!-- 발표영상링크 -->
 ## Installation instructions
+You can download our code from Github using git clone.
+```
+git clone https://github.com/suooo/2022-OSS-Team2.git
+```
 > [Website Link]() <!-- 웹사이트링크 -->
 ## Function
 
@@ -23,9 +27,8 @@
 기상청 날씨 Open API를 사용하여 현재와 미래의 날씨, 기온 확인.
 <br/>
 현재 날씨와 기온, 오늘의 최저/최고 기온이 상단에 디스플레이되며, 하단에서는 3시간 단위의 미래 날씨와 기온을 확인할 수 있다.
-<br/>
 10분마다 자동으로 업데이트 된다.
-<br/>
+<br/><br/>
 지역을 선택하여 원하는 위치의 날씨를 확인.
 <br/>
 선택한 지역은 세션 스토리지에 기록되며 탭을 닫지 않는한 다시 접속할 경우 해당 지역을 다시 표시해 사용자 편의를 개선하였다.

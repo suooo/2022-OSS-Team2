@@ -14,13 +14,13 @@
 ![image](https://user-images.githubusercontent.com/51541413/205244646-62f37c84-0bd2-4eca-ad8b-c6b6dc81d4e8.png)
 
 ## Presentation Video
-> [Youtube Link]() <!-- 발표영상링크 -->
+> Link: [Youtube]() <!-- 발표영상링크 -->
 ## Installation instructions
 You can download our code from Github using git clone.
 ```
 git clone https://github.com/suooo/2022-OSS-Team2.git
 ```
-> [Website Link]() <!-- 웹사이트링크 -->
+> Link: [Website](https://suooo.github.io/2022-OSS-Team2/) <!-- 웹사이트링크 -->
 ## Function
 
 ### Weather

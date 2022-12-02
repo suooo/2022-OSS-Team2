@@ -166,7 +166,7 @@ button{
 .memo{
   position: relative;
   margin-top: 6%;
-  height: auto;
+  height: 94%;
   overflow-y: auto;
   overflow-x: hidden;
 }
